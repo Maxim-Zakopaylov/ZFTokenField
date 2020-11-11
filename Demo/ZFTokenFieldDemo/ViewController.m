@@ -49,7 +49,7 @@
 
 - (CGFloat)lineHeightForTokenInField:(ZFTokenField *)tokenField
 {
-    return 40;
+    return 32;
 }
 
 - (NSUInteger)numberOfTokenInField:(ZFTokenField *)tokenField
@@ -67,8 +67,8 @@
     [button addTarget:self action:@selector(tokenDeleteButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     
     label.text = self.tokens[index];
-    CGSize size = [label sizeThatFits:CGSizeMake(1000, 40)];
-    view.frame = CGRectMake(0, 0, size.width + 97, 40);
+    CGSize size = [label sizeThatFits:CGSizeMake(1000, 32)];
+    view.frame = CGRectMake(0, 0, size.width + 24, 32);
     return view;
 }
 
